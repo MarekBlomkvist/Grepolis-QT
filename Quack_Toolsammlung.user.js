@@ -3339,7 +3339,7 @@ function main_script(DATA) {
 				standard : 'Standard',
 				stats_scripts : 'Stats/Scripts',
 				settings : 'Script manager',
-				quo : 'Quo',
+				quo : 'BashRanking',
 				grepoworld : 'Grepoworld'
 			},
 			academy : {
@@ -3639,8 +3639,8 @@ function main_script(DATA) {
 		zeitrechner : "https://openuserjs.org/scripts/Menidan/Grepolis_Zeitrechner",
 		diotools : "http://forum.de.grepolis.com/showthread.php?28838",
 		bauerndorfalarm : "http://forum.de.grepolis.com/showthread.php?28919",
-		quo : "http://www.quo.marekblomkvist.com/" + wID,
-		quo_main : "http://www.quo.marekblomkvist.com",
+		quo : "https://bashranking.com/a/" + wID + "/" + aID,
+		quo_main : "https://bashranking.com",
 		grepolisqt_main : "http://www.grepolisqt.de",
 		grepolisqt : "http://adf.ly/pcChx",
 		grepolisqt_facebook : "https://www.facebook.com/grepolisqt",
@@ -4885,7 +4885,7 @@ function main_script(DATA) {
 			});
 			$(d[0]).append("<a target=_blank href=http://" + mID + ".grepostats.com/world/" + wID + "/alliance/" + b[1] + '><img src="http://s14.directupload.net/images/120328/kxn3oknc.png"></a>');
 			if (mID === "de") {
-				$(d[0]).append('<a target="_blank" href="http://marekblomkvist.com/quo/'+ wID +'/'+ b[1] +'"><img src="http://s7.directupload.net/images/140615/fhkhdsdc.png"></a>')
+				$(d[0]).append('<a target="_blank" href="https://bashranking.com/a/'+ wID +'/'+ b[1] +'"><img src="http://s7.directupload.net/images/140615/fhkhdsdc.png"></a>')
 			}
 		},
 		allianceInactivity : function () {
@@ -6474,7 +6474,7 @@ function main_script(DATA) {
 						[QT.Lang.get("qtoolbox", "track_alliance"), "http://s7.directupload.net/images/121012/4kfl493a.png", "link_gi_alliance"],
 						[QT.Lang.get("qtoolbox", "top_killers"), "http://s14.directupload.net/images/121012/p2otvkuz.png", "link_gi_topkillers"]],
 					//[QT.Lang.get("qtoolbox", "grepo_bash"), "http://s14.directupload.net/images/140615/x766ldmm.png", "link_grepobash"],
-					[QT.Lang.get("qtoolbox", "quo"), "http://s7.directupload.net/images/140615/fhkhdsdc.png", "link_quo"]],
+					[QT.Lang.get("qtoolbox", "quo"), "https://s17.directupload.net/images/190312/bvn92ktp.png", "link_quo"]],
 				[QT.Lang.get("qtoolbox", "maps"), "http://s1.directupload.net/images/121012/4hbt2ofa.png", "",
 					[QT.Lang.get("qtoolbox", "grepo_maps"), "http://s1.directupload.net/images/121012/4hbt2ofa.png", "link_maps_grepomaps"],
 					[QT.Lang.get("qtoolbox", "grepo_intel"), "http://s14.directupload.net/images/130403/u33cb3b8.jpg", "link_maps_grepointel"]],
@@ -7499,7 +7499,7 @@ function main_script(DATA) {
 					//"grepostats" : ["Grepolis Stats", "http://adf.ly/B7C8k", "Clash Rank", "http://www.clashrank.com/contact", QT.Links.grepostats, "Bietet Statistiken und Übersichten über Spieler, Allianzen, Städte und vielem mehr"],
 					"grepolisintel" : ["Grepolis Intel", "http://adf.ly/B7D1y", "wansyth", "mailto:wansyth@grepointel.com", QT.Links.grepointel, "Ähnlich wie Grepo Stats, aber mit einigen zusätzlichen Funktionen wie Serverkarten oder Polissuche"],
 					"grepolismaps" : ["Grepolis Maps", "http://adf.ly/B7BlJ", "Gehirnpfirsich", "mailto:info@twmaps.org", QT.Links.grepomaps_main, "Kartentool - Weltkarten aller Server"],
-					"quo" : ["Quo - Allianz Bashliste", "http://adf.ly/pc8xL", "Maltokor", "http://forum.de.grepolis.com/private.php?do=newpm&u=47548", QT.Links.quo_main, "Alternative zu Grepobash"],
+					"quo" : ["BashRanking - Allianz Bashliste", "http://adf.ly/pc8xL", "Maltokor", "http://forum.de.grepolis.com/private.php?do=newpm&u=47548", QT.Links.quo_main, "Alternative zu Grepobash"],
 					//"grepobash" : ["Grepolis Bashrangliste", "http://adf.ly/B6HBW", "quert", "mailto:support@terenceds.de", QT.Links.grepobash_main, "Allianzinterne Bashrangliste"],
 					"polissuche" : ["Polissuche", "http://adf.ly/fGG9b", "tonda", "http://forum.de.grepolis.com/private.php?do=newpm&u=1345", QT.Links.polisssuche_main, "Deutsche Suchfunktion für Städte mit breiter Auswahl von Filteroptionen. Nützlich um Geisterstädte und Inaktive zu finden"],
 					"grepofinder" : ["Grepolis Finder", "http://adf.ly/B7D6r", "Ludovic Drolez", "mailto:ludo@drolez.com", QT.Links.grepofinder_main, "Suchen von Städten mit bestimmten Filteroptionen. Nützlich um Geisterstädte und Inaktive zu finden"],
@@ -7739,7 +7739,7 @@ function main_script(DATA) {
 					//l.append('<span class="qt_gsbutton"><a class="qt_gsbutton" target="_blank" href="http://' + i + ".grepostats.com/world/" + h + "/alliance/" + k + '"><img src="http://s14.directupload.net/images/120328/kxn3oknc.png"></a></span>');
 					if (mID === "de") {
 						l.css("width", "+=26px");
-						l.append('<a class="qt_quobutton" target="_blank" href="http://marekblomkvist.com/quo/'+ h +'/'+ k +'"><img src="http://s7.directupload.net/images/140615/fhkhdsdc.png"></a>');
+						l.append('<a class="qt_quobutton" target="_blank" href="https://bashranking.com/a/'+ h +'/'+ k +'"><img src="https://s17.directupload.net/images/190312/bvn92ktp.png"></a>');
 					}
 				}
 			}
